@@ -154,7 +154,7 @@ def main():
         TestResults = PerformTest(Results,OldResults)
     except:
         print("Error performing the test")
-        WriteErrorToFile(ScriptData,"Error performing the test")
+        WriteErrorToFile(ScriptData,"Error performing the comparison test")
     try:
         WriteResultsToFile(ScriptData,TestResults)
     except:
