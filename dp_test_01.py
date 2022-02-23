@@ -8,7 +8,8 @@ from GenericFunctions import GenerateScriptFile, RunSimulator, RemoveOldExcelFil
 
 TestDirPath = os.environ.get('LEGION_TEST_DATA')
 
-PathToFolder = TestDirPath
+#PathToFolder = TestDirPath
+PathToFolder = "c:\Test"
 
 Tolerance = 0.01 # difference greater than 1% causes failure 
 class ScriptDataClass():
