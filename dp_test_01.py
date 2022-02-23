@@ -11,6 +11,7 @@ TestDirPath = os.environ.get('LEGION_TEST_DATA')
 #PathToFolder = TestDirPath
 PathToFolder = "c:\Test"
 
+
 Tolerance = 0.01 # difference greater than 1% causes failure 
 class ScriptDataClass():
     def __init__(self,PathToFolder):
@@ -21,8 +22,10 @@ class ScriptDataClass():
         self.SimScriptPath = PathToFolder + "\\save_results_dp_test_01.lsx"
         self.logPath = PathToFolder + "\\Dummy_Log.log"
         self.OutputPath = PathToFolder
-        self.ExecutablePath = os.environ.get('LEGION_SIMULATOR_PATH')
-        self.ModelBuilderPath = os.environ.get('LEGION_MODEL_BUILDER_PATH')
+        #self.ExecutablePath = os.environ.get('LEGION_SIMULATOR_PATH')
+        self.ExecutablePath = "C:\Program Files\Bentley\LEGION CONNECT Edition\Simulator\Bin\LEGIONSimulator.exe"
+        #self.ModelBuilderPath = os.environ.get('LEGION_MODEL_BUILDER_PATH')
+        self.ModelBuilderPath = "C:\Program Files\Bentley\LEGION CONNECT Edition\ModelBuilder\Bin\LEGIONModelBuilder.exe"
         self.BaseDelaytime = PathToFolder + "\\base_delay_time.csv"        
         
 def ExtractResults(ScriptData):
