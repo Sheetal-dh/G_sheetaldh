@@ -22,5 +22,5 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest
+    python dp_test_01.py
   displayName: 'pytest'
