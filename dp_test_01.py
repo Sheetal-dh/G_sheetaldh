@@ -158,7 +158,7 @@ def main():
     try:
         WriteResultsToFile(ScriptData,TestResults)
     except:
-        print("Error writing results to file")
+        print("Error in writing results to file")
 
 
 
